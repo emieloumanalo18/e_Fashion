@@ -232,5 +232,3 @@ def filter_store():
 
 
 
-if __name__ == "__main__":
-    app.run( port='56314', debug=True)
