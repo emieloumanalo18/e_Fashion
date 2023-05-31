@@ -7,6 +7,4 @@ jupyter==1.0.0
 matplotlib==3.5.2
 torch==2.0.0
 
-RUN pip3 install flask flask-cors gunicorn
-RUN pip3 install torch torchvision
-RUN pip3 install fastai
+ -m pip install --upgrade pip
