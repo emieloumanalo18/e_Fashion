@@ -10,4 +10,3 @@ notebook==6.5.4
 numpy==1.23.0
 torch==2.0.0
 torchvision==0.15.1
-Python==3.10.4
