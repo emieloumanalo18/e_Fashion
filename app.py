@@ -13,6 +13,8 @@ app.config['UPLOAD'] = upload_folder
 
 
 def classification(image):
+    temp = pathlib.PosixPath
+    pathlib.PosixPath = pathlib.WindowsPath
     cnn = load_learner('models/fashion_classification.pkl')
 
     predicted_category = cnn.predict(item = image)
