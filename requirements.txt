@@ -5,4 +5,4 @@ fastcore==1.5.29
 Flask==2.2.3
 jupyter==1.0.0
 matplotlib==3.5.2
-
+pathlib=1.0.1
