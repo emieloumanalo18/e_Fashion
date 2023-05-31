@@ -2,6 +2,7 @@ from fastai.vision.all import *
 from flask import Flask, request, render_template, redirect
 import os
 import json
+import pathlib
 
 
 app = Flask(__name__)
@@ -47,7 +48,8 @@ mens= ['k_m_jacket', 'k_m_jeans', 'k_m_pants', 'k_m_shorts', 'k_m_t-shirt', 'k_m
 womans= ['k_w_dress', 'k_w_jeans', 'k_w_pants', 'k_w_shirt', 'k_w_short', 'k_w_skirt', 'w_belt', 'w_dress', 'w_jeans', 'w_pants', 'w_shorts', 'w_skirts', '']    
         
 
-
+plt = platform.system()
+if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 
 @app.route('/',methods=['POST', 'GET'])
 def predict():
@@ -233,4 +235,4 @@ def filter_store():
 
 
 if __name__ == "__main__":
-    app.run(port='56314', debug=True)
+    app.run()
