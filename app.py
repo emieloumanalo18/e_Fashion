@@ -215,10 +215,6 @@ def filter_store():
 
     if request.method == 'POST':
         store = request.form['page']
-        
-        
-if __name__ == "__main__":
-    app.run( port='56314', debug=True)
         products = request.form['f_product']
         if store.lower() == "flipkart":
             for product in products:
