@@ -1,2 +1,1 @@
 fastai==2.7.12
-gunicorn==20.1.0
